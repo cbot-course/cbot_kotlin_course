@@ -1,4 +1,4 @@
-package main.kotlin.com.cbot.course.practice_unit_1_3/*Assignment 1: Immutable Variable (val)
+/*Assignment 1: Immutable Variable (val)
 Task:
 Create a variable called daysInWeek with the value 7. Don't write the type — let Kotlin figure it out. */
 
@@ -41,14 +41,14 @@ val pi: Double = 3.14159
 
 Assignment 5: Single-Line Comment
 Task:
-Add a comment explaining a variable that stores a user's main.kotlin.resources.name. */
+Add a comment explaining a variable that stores a user's . */
 
 var userName = "OldMan" // Sets username to OldMan as a mutable variable
 
 /*
 Assignment 6: Remainder Operator (%)
 Task:
-Check if the main.kotlin.resources.number 25 is even, and store the result in isEven. */
+Check if the 25 is even, and store the result in isEven. */
 
 fun checkEven(number : Int): Boolean {
 
