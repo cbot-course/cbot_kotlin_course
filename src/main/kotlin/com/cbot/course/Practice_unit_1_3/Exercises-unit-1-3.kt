@@ -1,6 +1,6 @@
-/*Assignment 1: Immutable Variable (val)
+package main.kotlin.com.cbot.course.Practice_unit_1_3/*Assignment 1: Immutable Variable (val)
 Task:
-Create a variable called daysInWeek with the value 7. Don't write the type — let Kotlin figure it out. */
+Create a variable called main.kotlin.com.cbot.course.Practice_unit_1_3.daysInWeek with the value 7. Don't write the type — let Kotlin figure it out. */
 
 val daysInWeek = 7;
 
@@ -19,7 +19,7 @@ fun UpdateScore() {
 /*
 Assignment 3: Arithmetic Operators
 Task:
-Create width and height variables. Find the area of a rectangle. */
+Create main.kotlin.com.cbot.course.Practice_unit_1_3.width and main.kotlin.com.cbot.course.Practice_unit_1_3.height variables. Find the main.kotlin.com.cbot.course.Practice_unit_1_3.area of a rectangle. */
 
 var width = 10
 var height = 15
@@ -32,7 +32,7 @@ fun printArea() {
 /*
 Assignment 4: Explicit Type Declaration
 Task:
-Make a variable pi with type Double and value 3.14159.
+Make a variable main.kotlin.com.cbot.course.Practice_unit_1_3.pi with type Double and value 3.14159.
 */
 
 val pi: Double = 3.14159
@@ -48,7 +48,7 @@ var userName = "OldMan" // Sets username to OldMan as a mutable variable
 /*
 Assignment 6: Remainder Operator (%)
 Task:
-Check if the number 25 is even, and store the result in isEven. */
+Check if the number 25 is even, and store the result in main.kotlin.com.cbot.course.Practice_unit_1_3.isEven. */
 
 fun checkEven(number : Int): Boolean {
 
@@ -69,7 +69,7 @@ fun printisEven() {
 
 Assignment 7: Template Strings
 Task:
-Combine firstName and lastName into one variable called fullName. */
+Combine main.kotlin.com.cbot.course.Practice_unit_1_3.firstName and main.kotlin.com.cbot.course.Practice_unit_1_3.lastName into one variable called main.kotlin.com.cbot.course.Practice_unit_1_3.fullName. */
 
 var firstName = "Bob"
 var lastName = "McFly"
@@ -93,7 +93,7 @@ fun main() {
 /*
 Assignment 9: Comparison Operators
 Task:
-Check if myAge is enough to meet requiredAge.
+Check if myAge is enough to meet main.kotlin.com.cbot.course.Practice_unit_1_3.requiredAge.
 */
 
 val requiredAge = 20
