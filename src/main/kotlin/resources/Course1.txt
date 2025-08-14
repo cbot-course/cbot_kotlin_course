@@ -1,0 +1,2 @@
+val - for constants
+var - for variables
