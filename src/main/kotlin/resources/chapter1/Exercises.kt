@@ -1,4 +1,4 @@
-package main.kotlin.resources
+package main.kotlin.resources.chapter1
 //constants
 
 val name: String = "cbot"
