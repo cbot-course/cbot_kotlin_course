@@ -34,8 +34,6 @@ fun main() {
 Try these simple tasks to practice the main topics from our lessons:
 **if/else, when, loops, ranges, arrays**.
 
----
-
 ## 1. Conditional Statements (`if/else`)
 
 **Task 1:**
