@@ -129,6 +129,7 @@ Assignment 10: Multi-line Comment
 Task:
 Describe the logic of code that calculates a price with a discount.
 */
+
 fun calculateDiscountedPrice(originalPrice: Double, discountPercentage: Int): Unit {
     val discountedPrice = originalPrice - (originalPrice * (discountPercentage / 100.0))
     return println("With an $originalPrice and a $discountPercentage% discount, the discounted price is $discountedPrice")
