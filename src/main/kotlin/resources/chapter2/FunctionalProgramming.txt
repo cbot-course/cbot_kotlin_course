@@ -1,0 +1,12 @@
+Functional Programming
+
+Week 2 - Class 1
+ - Functions
+ - Prameteres
+ - Return results
+
+ - Single expression functions
+ - Functions overloading
+ -----------------------------------
+
+ Functions - named block of code that does a specific job. Functions are needed to organize code and make it reusable.
