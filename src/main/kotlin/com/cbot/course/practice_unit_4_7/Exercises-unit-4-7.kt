@@ -41,10 +41,6 @@ Try these simple tasks to practice the main topics from our lessons:
 **Task 1:**
 Write a program that checks if a number is positive, negative, or zero.
 Print a message for each case.
-
-```kotlin
-val number = -3
-```
 */
 
 fun checkNumber(number: Int) {
