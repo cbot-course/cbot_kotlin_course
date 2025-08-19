@@ -1,6 +1,6 @@
 fun main() {
     daysInWeek()
-    UpdateScore()
+    updateScore()
     printArea()
     printisEven()
     daysInWeek()
@@ -19,7 +19,7 @@ fun main() {
 /*Assignment 1: Immutable Variable (val)
 Task:
 Create a variable called daysInWeek with the value 7. Don't write the type — let Kotlin figure it out. */
-val daysInWeek = 7;
+val daysInWeek = 7
 fun daysInWeek() {
     println(daysInWeek)
 }
@@ -28,9 +28,9 @@ fun daysInWeek() {
 Task:
 Make a variable called userScore with a starting value of 0. Add 10 to it and print the result. */
 
-fun UpdateScore() {
-    var userScore = 0;
-    userScore += 10;
+fun updateScore() {
+    var userScore = 0
+    userScore += 10
     println(userScore)
 }
 
@@ -141,9 +141,9 @@ Task:
 Store whether a user is active. Pick the best type and assign true.
 */
 
-val isuseractive: Boolean = true
+val isUserActive: Boolean = true
 fun UserState() {
-    println(isuseractive)
+    println(isUserActive)
 }
 
 /*
