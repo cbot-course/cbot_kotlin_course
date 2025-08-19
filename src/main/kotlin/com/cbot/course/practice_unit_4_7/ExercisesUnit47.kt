@@ -24,8 +24,6 @@ fun main() {
     checkLargerNumber(2,9)
     printDayName(3)
     sumNumbersRange()
-
-
 }
 
 /*
@@ -283,6 +281,8 @@ val b = 20
 fun checkLargerNumber(a: Int, b: Int) {
     if (a > b) {
         println("The larger number is: $a")
+    } else if (a == b ) {
+        println("Numbers are equal")
     } else {
         println("The larger number is: $b")
     }
