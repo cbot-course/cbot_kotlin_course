@@ -61,7 +61,7 @@ fun showMessage(message: String) {
 
 fun printNumbers(vararg numbers: Int) {
     for (number in numbers) {
-        print("$number ")
+        println(number)
     }
 }
 
@@ -86,13 +86,14 @@ fun addToGroup(groupName: String, vararg users: String) {
 fun multiply(a: Int, b: Int): Int {
     return a * b
 }
-
 fun isEven(number: Int): Boolean {
     return number % 2 == 0
 }
 
 fun printIfPositive(number: Int) {
-    if (number <= 0) return
+    if (number <= 0) {
+        return
+    }
     println(number)
 }
 
