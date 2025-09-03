@@ -1,46 +1,84 @@
 package main.kotlin.com.cbot.course.chapter3
 
 fun main (){
-    println(printDogInfo())
+    println(goodBoy.printDogInfo())
     println(goodBoy.bark())
+    println(dog1.printDogInfo())
+    println(dog2.printDogInfo())
+    println(dog3.printDogInfo())
+    println("Title is " + book1.title)
+    println("Author is " + book2.author)
+    val book3 = BookTask3 ("The Lord of the Rings", "J.R.R. Tolkien")
+    val book4 = BookTask3 ("Grave of the Fireflies")
+
 }
 
-/*pri
+/*
 Unit 1: Classes and Objects
 Task 1:
 Create a class called Dog with two properties: name (String) and age (Int). Make a new object of this class and print its properties.
-*/
-
-class Dog (var name: String, var age: Int){
-    fun bark(): String{
-        return "Woof My name is ${goodBoy.name}"
-    }
-}
-
-val goodBoy = Dog ("bob", 5)
-fun printDogInfo(): String {
-    return "Dog's name is ${goodBoy.name} and age is ${goodBoy.age}"
-}
-
-
-/*
 
 Task 2:
 Add a function to the Dog class called bark(). Make it print "Woof! My name is {name}". Call this function for your object.
+*/
 
+class Dog (var name: String, var age: Int) {
+    fun bark(): String {
+        return "Woof My name is $name"
+    }
+    fun printDogInfo(): String {
+        return "Dog's name is $name and age is $age"
+    }
+}
+val goodBoy = Dog ("bob", 5)
+
+/*
 Task 3:
 Create three different objects of the Dog class with different names and ages. Print their properties using a function in the class.
+*/
+
+val dog1 = Dog ("bob", 2)
+val dog2 = Dog ("tod", 3)
+val dog3 = Dog ("pod", 4)
+/*
 
 Unit 2: Constructors
 Task 1:
 Create a class called Book with a primary constructor that takes two parameters: title (String) and author (String). Make an object and print the book's title and author.
+*/
+class Book (var title: String, var author: String)
 
+var book1 = Book ("The Lord of the Rings", "J.R.R. Tolkien")
+//println(book1.title)
+
+/*
 Task 2:
 Add a secondary constructor to Book that only takes a title and sets the author to "Unknown". Create an object using this constructor and print its properties.
+*/
+class BookTask2 (var title: String, var author: String) {
+    constructor(title: String) : this(title, "Unknown")
+}
+var book2 = BookTask2 ("The Lord of the Rings")
+//println(book2.title)
 
+/*
 Task 3:
 Add an initializer block (init) to the Book class that prints "Book created: {title} by {author}" when a new book is made. Test it with both constructors.
+*/
 
+class BookTask3 (var title: String, var author: String) {
+    //initializer block
+    init {
+        println("Book created: $title by $author")
+    }
+    //secondary constructor
+    constructor(title: String) : this(title, "Unknown")
+}
+
+//var book3 = BookTask3 ("The Lord of the Rings", "J.R.R. Tolkien")
+//var book4 = BookTask3 ("Grave of the Fireflies")
+
+/*
 Unit 3: Packages and Import
 Task 1:
 Create a package called mathops. Inside it, make a function called add(a: Int, b: Int): Int that returns the sum of two numbers.
