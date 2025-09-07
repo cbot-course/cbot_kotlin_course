@@ -1,4 +1,6 @@
 package main.kotlin.com.cbot.course.chapter3
+import main.kotlin.com.cbot.course.chapter3.mathops.add
+import main.kotlin.com.cbot.course.chapter3.stringops.concat
 
 fun main (){
     println(goodBoy.printDogInfo())
@@ -10,6 +12,12 @@ fun main (){
     println("Author is " + book2.author)
     val book3 = BookTask3 ("The Lord of the Rings", "J.R.R. Tolkien")
     val book4 = BookTask3 ("Grave of the Fireflies")
+    println("Sum is " + add(22, 23))
+    println("Concat is " + concat("Hello", "World"))
+    println("Student age is " + student1.age)
+    println("Student name is " + student1.name)
+    println("Student is allowed to vote :" + student1.isAdult())
+    println("Student 2 name is " + student2.name)
 
 }
 
@@ -85,10 +93,18 @@ Create a package called mathops. Inside it, make a function called add(a: Int, b
 
 Task 2:
 In another file, import your add function from mathops and use it to add two numbers. Print the result.
+*/
 
+//check import and use #1
+
+/*
 Task 3:
 Create another package called stringops with a function called concat(a: String, b: String): String that joins two strings. Import both add and concat into a third file and use both functions.
+*/
 
+//check import and use #2
+
+/*
 Unit 4: Getters and Setters
 Task 1:
 Create a class called Student with a property age (Int). Add a setter that only allows age values between 5 and 100.
@@ -98,6 +114,36 @@ Add a computed property isAdult (Boolean) to the Student class. It should return
 
 Task 3:
 Add a private field _name to Student and a public property name with custom getter and setter. The setter should not allow empty names. Try to set an empty name and print the result.
+
+*/
+
+class Student(
+    age: Int = 0,
+    name: String = "Unknown",
+    private var _name: String = "Unknown"
+) {
+    var age: Int = age
+        set(value) {
+            if (value in 5..100) {
+                field = value
+            }
+        }
+    var name: String = name
+        set(value) {
+            if (value.isNotEmpty()) {
+                field = value
+                _name = value
+            }
+        }
+    fun isAdult(): Boolean = age >= 18
+
+}
+
+
+var student1 = Student(19, "Bob")
+var student2 = Student(4)
+
+/*
 
 Unit 5: Access Modifiers Practice Tasks
 Task 1: Safe Bank Account
