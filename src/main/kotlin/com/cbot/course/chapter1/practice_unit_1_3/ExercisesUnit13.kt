@@ -1,3 +1,5 @@
+package com.cbot.course.chapter1.practice_unit_1_3
+
 fun main() {
     daysInWeek()
     updateScore()
