@@ -1,4 +1,4 @@
-package com.cbot.course.chapter1.practice_unit_1_3
+package com.cbot.course.chapter1.unit1to3
 
 fun main() {
     daysInWeek()
