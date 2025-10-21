@@ -155,6 +155,20 @@ A public function deposit(amount: Double) that adds money to the balance.
 A public function getBalance() that returns the current balance.
 Try to access the balance directly from outside the class and see what happens.
 
+
+*/
+ class BankAccount {
+    private var balance: Double = 0.0
+    fun deposit(amount: Double) {
+        balance += amount
+    }
+    fun getBalance(): Double {
+        return balance
+    }
+}
+
+
+/*
 Task 2: Family Members
 
 Create a class Person with:
@@ -165,6 +179,24 @@ A public function showFullName() that prints the full name.
 Then, create a class Child that inherits from Person and prints the last name using a function.
 
 Try to access lastName from outside both classes.
+
+*/
+
+ open class Person {
+    protected var lastName: String = "Unknown"
+    var firstName: String = "Unknown"
+    fun showFullName() {
+        println("$firstName $lastName")
+    }
+}
+
+class Child : Person() {
+    fun printLastName() {
+        println(lastName)
+    }
+}
+
+/*
 
 Task 3: Secret Recipe
 
@@ -177,3 +209,11 @@ In your main function, print the recipe name and call printIngredients().
 
 Try to access ingredients from another file in the same module and from a different module.
  */
+
+internal class Recipe {
+    internal var ingredients: List<String> = emptyList()
+    var name: String = "Unknown"
+    private fun printIngredients() {
+        println(ingredients)
+    }
+}
